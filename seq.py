@@ -1,6 +1,4 @@
-# Quand on appelle une fonction qui utilise yield, il faut savoir qu'elle n'est pas
-# exécuté. Elle retourne simplement un object generator.
-# Et un generator on ne peut le lire qu'une seule fois, il n'est pas stocké dans la mémoire 
+# TYPE SITE : https://docs.python.org/fr/3.10/library/typing.html#typing.Generic
 class Vide :
     def __init__(self) -> None:
         None
@@ -10,11 +8,6 @@ class Noeud:
     def __init__(self, head , tail) -> None:
         self.head = head
         self.tail = tail
-
-
-
-# replace return by yield ! The map funciton creates/returns a generator 
-# wich we can use whenever we want !
     
     def map_rec(self, f, seq):
         if seq is Vide :
